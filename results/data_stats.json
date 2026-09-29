@@ -1,0 +1,13 @@
+{
+  "raw_pairs": 237243,
+  "after_null_empty": 237241,
+  "after_dedup": 181955,
+  "after_script_filter": 181914,
+  "after_length_filter": 175852,
+  "avg_words_en": 17.16,
+  "avg_words_am": 12.24,
+  "median_words_en": 15.0,
+  "median_words_am": 11.0,
+  "word_types_en": 97482,
+  "word_types_am": 233231
+}

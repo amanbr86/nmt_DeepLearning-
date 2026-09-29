@@ -1,0 +1,7 @@
+,seq2seq,attention
+repetition,35.1,41.9
+missing_words(hyp<0.6*ref),27.9,5.9
+extra_words(hyp>1.5*ref),1.7,2.7
+rare_source_word(train freq<=2),35.6,35.6
+long_sentence(>20 words),31.7,31.7
+empty_output,0.0,0.0

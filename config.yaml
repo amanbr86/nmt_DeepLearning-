@@ -1,0 +1,39 @@
+# Single source of truth for BOTH models (fair comparison)
+seed: 42
+
+paths:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  ckpt_dir: checkpoints
+  tokenizer_dir: checkpoints/tokenizer
+  results_dir: results
+
+data:
+  dataset: habtew/english-amharic-translation   # or michsethowusu/english-amharic_sentence-pairs_mt560
+  max_pairs: null          # set e.g. 20000 to debug quickly
+  min_words: 2
+  max_words: 50
+  max_len_ratio: 3.0       # max(len_en/len_am, len_am/len_en)
+  lowercase_en: true
+  val_frac: 0.05
+  test_frac: 0.05
+
+tokenizer:
+  model_type: unigram      # or bpe
+  vocab_size: 8000
+  max_subwords: 64         # longer training pairs are dropped
+
+model:
+  emb_dim: 256
+  hidden_dim: 512
+  n_layers: 2
+  dropout: 0.3
+
+train:
+  batch_size: 64
+  lr: 0.001
+  epochs: 20
+  clip: 1.0
+  teacher_forcing: 0.7
+  patience: 3              # early stopping on validation loss
+  num_workers: 2

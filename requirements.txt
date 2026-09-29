@@ -1,0 +1,13 @@
+torch>=2.1
+datasets>=2.18
+sentencepiece>=0.2.0
+sacrebleu>=2.4
+pandas>=2.0
+pyarrow>=14
+pyyaml>=6.0
+tqdm>=4.66
+matplotlib>=3.8
+fastapi>=0.110
+uvicorn>=0.29
+gradio>=4.0
+httpx>=0.27

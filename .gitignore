@@ -1,0 +1,36 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment/secrets
+.env
+.env.*
+
+# VS Code
+.vscode/
+
+# PyTorch / ML large files
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.h5
+
+# Datasets
+data/
+datasets/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

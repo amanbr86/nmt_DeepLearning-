@@ -1,0 +1,26 @@
+[
+  {
+    "model": "seq2seq",
+    "BLEU": 5.78,
+    "chrF": 14.51,
+    "chrF++": 13.96,
+    "test_loss": 3.741,
+    "perplexity": 42.1,
+    "train_time_min": 141.7,
+    "infer_sec_per_sentence(batched)": 0.00039,
+    "infer_sec_per_sentence(single)": 0.01271,
+    "parameters": 22381376
+  },
+  {
+    "model": "attention",
+    "BLEU": 15.4,
+    "chrF": 28.64,
+    "chrF++": 27.7,
+    "test_loss": 3.059,
+    "perplexity": 21.3,
+    "train_time_min": 418.9,
+    "infer_sec_per_sentence(batched)": 0.00118,
+    "infer_sec_per_sentence(single)": 0.02248,
+    "parameters": 35505984
+  }
+]

@@ -1,0 +1,3 @@
+model,BLEU,chrF,chrF++,test_loss,perplexity,train_time_min,infer_sec_per_sentence(batched),infer_sec_per_sentence(single),parameters
+seq2seq,5.78,14.51,13.96,3.741,42.1,141.7,0.00039,0.01271,22381376
+attention,15.4,28.64,27.7,3.059,21.3,418.9,0.00118,0.02248,35505984
